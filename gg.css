@@ -1,102 +1,92 @@
-* {
-  box-sizing: border-box;
-}
 
+    * {
+      box-sizing: border-box;
+      display: block;
+    }
 
-.header 
-{
-  padding: 80px;  
-  text-align: center;
-  background: #1abc9c; 
-  color: white; 
-}
+    .header {
+      padding: 80px;
+      text-align: center;
+      background: #1abc9c;
+      color: white;
+    }
 
-.header h1 
-{
-  font-size: 40px;
-}
+    .header h1 {
+      font-size: 40px;
+    }
 
-/* Style the top navigation bar */
-.navbar {
-  overflow: hidden; /* Hide overflow */
-  background-color: #1e1c1c;/* Dark background color */
-}
+    .navbar {
+      overflow: hidden;
+      background-color: #1e1c1c;
+    }
 
-/* Style the navigation bar links */
-.navbar a {
-  float: left; /* Make sure that the links stay side-by-side */
-  display: block; /* Change the display to block, for responsive reasons (see below) */
-  color: rgb(238, 240, 238); /* White text color */
-  text-align: center; /* Center the text */
-  padding: 14px 20px; /* Add some padding */
-  text-decoration: none; /* Remove underline */
-}
+    .navbar a {
+      float: left;
+      display: block;
+      color: rgb(238, 240, 238);
+      text-align: center;
+      padding: 14px 20px;
+      text-decoration: none;
+    }
 
-/* Right-aligned link */
-.navbar a.right {
-  float: right; /* Float a link to the right */
-}
+    .navbar a.right {
+      float: right;
+    }
 
-/* Change color on hover/mouse-over */
-.navbar a:hover {
-  background-color: #201b1b; /* Grey background color */
-  color: rgb(81, 212, 118); /* Black text color */
-}
+    .navbar a:hover {
+      background-color: #201b1b;
+      color: rgb(81, 212, 118);
+    }
 
-*{
-  box-sizing: border-box;
-}
+    * {
+      box-sizing: border-box;
+    }
 
-/* Column container */
-.row {  
-  display: -ms-flexbox; /* IE10 */
-  display: flex;
-  -ms-flex-wrap: wrap; /* IE10 */
-  flex-wrap: wrap;
-}
+    .row {
+      display: -ms-flexbox;
+      display: flex;
+      -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+    }
 
-/* Create two unequal columns that sits next to each other */
-/* Sidebar/left column */
-.side {
-  -ms-flex: 30%; /* IE10 */
-  flex: 30%;
-  background-color: #f1f1f1;
-  padding: 20px;
-}
+    .side {
+      -ms-flex: 30%;
+      flex: 30%;
+      background-color: #f1f1f1;
+      padding: 20px;
+    }
 
-/* Main column */
-.main {   
-  -ms-flex: 70%; /* IE10 */
-  flex: 70%;
-  background-color: white;
-  padding: 20px;
-}
+    .main {
+      -ms-flex: 70%;
+      flex: 70%;
+      background-color: white;
+      padding: 20px;
+    }
 
-/* Fake image, just for this example */
-.fakeimg {
-  background-color: #aaa;
-  width: 100%;
-  padding: 20px;
-}
+    .fakeimg {
+      background-color: #aaa;
+      width: 100%;
+      padding: 20px;
+      max-width: 100%; /* Ensure image does not exceed container width */
+      height: auto; /* Maintain aspect ratio */
+    }
 
-/* Footer */
-.footer {
-  padding: 20px;
-  text-align: center;
-  background: #ddd;
-}
+    .footer {
+      padding: 20px;
+      text-align: center;
+      background: #ddd;
+    }
 
-/* Responsive layout - when the screen is less than 700px wide, make the two columns stack on top of each other instead of next to each other */
-@media screen and (max-width: 700px) {
-  .row {   
-    flex-direction: column;
-  }
-}
+    @media screen and (max-width: 700px) {
+      .row {
+        flex-direction: column;
+      }
+    }
 
-/* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
-@media screen and (max-width: 400px) {
-  .navbar a {
-    float: none;
-    width: 100%;
-  }
-}
+    @media screen and (max-width: 400px) {
+      .navbar a {
+        float: none;
+        width: 100%;
+      }
+    }
+  
